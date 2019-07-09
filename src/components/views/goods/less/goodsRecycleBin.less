@@ -1,0 +1,72 @@
+/* 商品回收站样式 */
+.goodsRecycleBin_box {
+  background: #fff;
+  padding: 20px;
+  .tips {
+    border: 1px dashed #f3a36b;
+    background: #fef5ed;
+    padding: 10px;
+    p {
+      color: #333;
+    }
+  }
+  .btn {
+    margin: 20px 0 10px;
+  }
+  .table {
+    .goods {
+      overflow: hidden;
+      > span {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        float: left;
+        img {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+      }
+      > div {
+        float: right;
+        width: 245px;
+        text-align: left;
+        position: relative;
+        p {
+          font-size: 12px;
+          line-height: 18px;
+          height: 36px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        i {
+          font-style: normal;
+          color: #999;
+          font-size: 12px;
+          display: inline-block;
+          position: relative;
+          top: 15px;
+        }
+      }
+    }
+  }
+
+  .page{
+    margin-top: 20px;
+    text-align: right;
+  }
+}
+.dialog_box {
+  p {
+    color: #333;
+    line-height: 25px;
+  }
+}
+
+/deep/ .el-table th {
+  background: #efefef;
+}
+
+/deep/ .el-dialog__header {
+  background: #efefef;
+}

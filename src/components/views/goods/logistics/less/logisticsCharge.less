@@ -1,0 +1,246 @@
+
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 20px;
+  padding-bottom: 50px;
+  background: #ffffff;
+}
+
+
+
+.stage{
+  margin-top: 30px;
+  .title{
+    display: inline-block;
+  }
+  .stage-ul{
+    padding-left: 25px;
+    display: inline-block;
+    font-size: 0px;
+    li{
+      display: inline-block;
+      vertical-align: middle;
+      width: 44px;
+      height: 44px;
+      position: relative;
+    }
+    span{
+      display: inline-block;
+      vertical-align: middle;
+      width: 75px;
+      height: 11px;
+      background: url("../img/line.png") no-repeat center;
+      position: relative;
+      z-index: 10;
+    }
+    li:nth-of-type(1){
+      background: url("../img/frist.png") no-repeat center;
+    }
+    .ok{
+      background: url("../img/ok.png") no-repeat center;
+    }
+    .now{
+      background: url("../img/now.png") no-repeat center;
+    }
+    .wait{
+      background: url("../img/wait.png") no-repeat center;
+    }
+    .last{
+      background: url("../img/last.png") no-repeat center;
+    }
+    .last-ok{
+      background: url("../img/last-ok.png") no-repeat center;
+    }
+  }
+}
+.stage-content{
+  font-size: 0px;
+  padding-left: 170px;
+  margin-top: 10px;
+  li{
+    font-size: 12px;
+    display: inline-block;
+    //margin-right: 20px;
+    color: #666666;
+  }
+  .cur-stage{
+    color: #00a2ff;
+  }
+}
+
+
+.title{
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+  i{
+    color: #dc0000;
+    margin-right: 5px;
+  }
+}
+
+
+.charge-name{
+  margin-top: 20px;
+  /deep/ .el-input{
+    padding-left: 30px;
+    width: 434px;
+  }
+}
+
+.valuation{
+  margin-top: 20px;
+  .valuation-right{
+    padding-left: 30px;
+    display: inline-block;
+    width: calc(100% - 150px);
+    min-width: 800px;
+
+    vertical-align: top;
+  }
+  .remind-one{
+    margin-top: 20px;
+    color: #999999;
+    font-size: 14px;
+  }
+  .remind-two{
+    margin-top: 20px;
+    padding: 0px 10px;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    background: #fff7e6;
+    border:1px solid #ffc79c;
+    color: #c5651f;
+  }
+}
+
+.norm{
+
+  margin-top: 20px;
+  background: #ecf4fa;
+  padding:20px;
+  .norn-left{
+    display: inline-block;
+    color: #333333;
+    font-size: 14px;
+    >div{
+      display: inline-block;
+      width: 90px;
+      vertical-align: middle;
+      >span{
+        display: block;
+        text-align: center;
+        color: #ff0000;
+      }
+    }
+    input{
+      display: inline-block;
+      width: 80px;
+      height: 40px;
+      border: 1px solid #cccccc;
+      color: #666666;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      margin: 0px 5px;
+    }
+  }
+  .norn-right{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+
+
+    li{
+      color: #666666;
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+}
+
+.charge-add{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #00a2ff;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.table{
+  margin-top: 20px;
+  /deep/ .has-gutter{
+    th{
+      background: #f1f1f3;
+      border-right: none;
+      .cell{
+        color: #333333;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  /deep/ .cell{
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+.area-add{
+  .area-add-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/add.png") no-repeat center;
+    background-size: 16px 16px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+.table-input{
+  text-align: center;
+  >div{
+    display: inline-block;
+    width: 90px;
+    vertical-align: middle;
+    >span{
+      display: block;
+      text-align: center;
+      color: #ff0000;
+    }
+  }
+  input{
+    width: 100px;
+    height: 36px;
+    padding-left: 10px;
+    text-align: center;
+  }
+}
+.delete{
+  color: #00a2ff;
+  cursor: pointer;
+}
+
+.btn{
+  margin-top: 30px;
+  /deep/ button{
+    padding: 0px;
+    width: 86px;
+    height: 32px;
+  }
+}
+
+
+
+

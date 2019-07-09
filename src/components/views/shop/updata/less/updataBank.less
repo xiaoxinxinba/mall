@@ -1,0 +1,148 @@
+.bank {
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .remind{
+    margin-top: 20px;
+    color: #ff0000;
+    i{
+      margin-right: 5px;
+    }
+  }
+
+  .choose_type{
+    margin-top: 20px;
+    color: #333333;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: #ffffff;
+    /deep/ .el-input__inner{
+      height: 26px;
+      line-height: 26px;
+    }
+    /deep/ .el-input__icon{
+      line-height: 26px;
+    }
+  }
+
+
+
+  .main_list{
+    margin-top: 20px;
+    padding: 20px 100px;
+    background: #ffffff;
+  }
+  .main_title{
+    p:nth-of-type(1){
+      color: #333333;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    p:nth-of-type(2){
+      margin-top: 20px;
+      color: #999999;
+      font-size: 14px;
+    }
+  }
+  .main_from{
+    margin-top: 20px;
+  }
+
+  .area_company{
+    font-size: 0px;
+    /deep/ .el-form-item__content{
+      line-height: 36px;
+    }
+    .area_select{
+      display: inline-block;
+      width: 215px;
+      height: 36px;
+      margin-right: 10px;
+      /deep/ input{
+        height: 36px;
+        line-height: 36px;
+      }
+      /deep/ .el-input{
+        width: 215px;
+      }
+    }
+    .area_select_last{
+      margin-right: 0px;
+    }
+  }
+
+  .bank_base{
+    margin: 20px 0px;
+    color: #999999;
+    font-size: 12px;
+    padding-left: 190px;
+  }
+
+  .cardImg_style {
+    display: inline-block;
+    margin-right: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    > div {
+      img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+    p {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+
+
+
+    .avatar-uploader {
+      width: 250px;
+      height: 160px;
+      border-radius: 6px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      background: #eee;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .avatar-uploader .el-upload:hover {
+      border-color: #409EFF;
+    }
+    .avatar-uploader-icon {
+      font-size: 28px;
+      color: #8c939d;
+      width: 250px;
+      height: 160px;
+      line-height: 160px;
+      text-align: center;
+    }
+    .avatar {
+      width: 250px;
+      height: 160px;
+      display: block;
+    }
+
+  }
+
+  .tip_style {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    color: #00a2ff;
+    vertical-align: top;
+    padding-top: 148px;
+  }
+}

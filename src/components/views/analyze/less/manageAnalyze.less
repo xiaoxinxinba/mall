@@ -1,0 +1,165 @@
+
+
+*{
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container{
+  font-size: 0px;
+}
+.left,.right{
+  display: inline-block;
+  width: 45%;
+  margin: 0 2.5%;
+  vertical-align: top;
+  >div{
+    background: #ffffff;
+  }
+}
+.title{
+  height: 47px;
+  padding: 17px 16px 15px 22px;
+  border-bottom: 1px solid #e4ebf1;
+  span:nth-of-type(1){
+    font-weight: 600;
+  }
+  span:nth-of-type(2){
+    float: right;
+    color: #00a2ff;
+    cursor: pointer;
+  }
+}
+
+.order{
+  font-size: 0px;
+  padding: 0px 25px;
+  li{
+    display: inline-block;
+    padding: 30px 0px;
+    width: 33.33%;
+    text-align: center;
+    position: relative;
+  }
+}
+
+
+.grid{
+  font-size: 0px;
+  border-right: 1px solid #dcdcdc;
+
+  >div{
+    display: inline-block;
+  }
+  .grid-left{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+  }
+  .grid-right{
+    vertical-align: top;
+    p{
+      text-align: left;
+    }
+    p{
+      height: 24px;
+      line-height: 24px;
+      color: #333333;
+    }
+    P:nth-of-type(2){
+      font-size: 20px;
+      font-width: 600;
+    }
+    p:nth-of-type(3){
+      font-size: 14px;
+      color: #00a2ff;
+      cursor: pointer;
+    }
+
+  }
+}
+.none{    //没有线
+  border-right: 0;
+}
+.across-line{
+  border-top:1px solid #dcdcdc;
+}
+
+.table{
+  padding: 20px;
+  li{
+    height: 36px;
+    div{
+      display: inline-block;
+      width: 16.66%;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      border-left: 1px solid #e1e1e1;
+      border-bottom: 1px solid #e1e1e1;
+      span{
+        display: inline-block;
+        width: 95px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #666666;
+      }
+    }
+    div:nth-last-of-type(1){
+      border-right: 1px solid #e1e1e1;
+    }
+  }
+  .table-title{
+    background: #f1f1f3;
+    font-size: 0px;
+    height: 48px;
+    div{
+      display: inline-block;
+      height: 48px;
+      line-height: 48px;
+      color: #333333;
+    }
+  }
+  .more{
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+    span{
+      color: #00a2ff;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+
+.advertise-statistic{
+  margin-top: 20px;
+}
+.goods-statistic{
+  margin-top: 20px;
+}
+
+
+//图片
+.backgroundcard(@className,@pngName){
+  .@{className}{
+    background: url("../img/@{pngName}.png") no-repeat center;
+  }
+}
+
+@bgcardList:order_1,order_2,order_3,order_4,order_5,order_6,
+            activity_1,activity_2,activity_3,activity_4,activity_5,activity_6,advertisement,
+            goods_1,goods_2,goods_3;
+
+.loop(@i) when (@i < length(@bgcardList)+1){
+  .backgroundcard(extract(@bgcardList, @i),extract(@bgcardList, @i));
+  .loop(@i+1);
+}
+.loop(1);

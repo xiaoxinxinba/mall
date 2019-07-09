@@ -1,0 +1,37 @@
+@import "~@/assets/less/theme.less";
+
+.crumbs_cont {
+  background-color: #ffffff;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 20px;
+  min-width: max-content;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      margin-right: 20px;
+      position: relative;
+      a {
+        font-size: 12px;
+        text-decoration: none;
+      }
+      &:after {
+        position: absolute;
+        top: 0;
+        right: -14px;
+        content: '>';
+        display: block;
+      }
+    }
+    li:last-child {
+      a {
+        color: @color;
+      }
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

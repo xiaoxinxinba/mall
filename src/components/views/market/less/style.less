@@ -1,0 +1,248 @@
+// 增值服务样式
+.incrementService_box {
+  padding: 10px 20px 40px 20px;
+  background: #fff;
+
+  .table {
+    .table_type {
+      text-align: left;
+      padding-left: 40px;
+      color: #333;
+    }
+    .msg_icon {
+      background: url("../img/incre_msg_icon.png") no-repeat left center;
+    }
+    .phone_icon {
+      background: url("../img/incre_phone_icon.png") no-repeat left center;
+    }
+    .table_node {
+      p {
+        color: #333;
+        span {
+          color: #00a2ff;
+        }
+      }
+    }
+    .table_price {
+      color: #333;
+      span {
+        color: #ff8400;
+      }
+    }
+    .table_state {
+      color: #333;
+    }
+    .pass {
+      color: #1a8406;
+    }
+  }
+
+  .box {
+    .top {
+      border-left: 5px solid #21a9f9;
+      padding: 5px 14px;
+      background: #f2f6fc;
+      margin: 50px 0 30px 0;
+      span {
+        color: #333;
+        display: inline-block;
+        position: relative;
+        small {
+          position: relative;
+          top: 2px;
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          cursor: pointer;
+          background: url("../img/incre_help_icon.png") no-repeat center center;
+        }
+      }
+      span.tips {
+        margin-left: 30px;
+        color: #ff0000;
+        i {
+          font-size: 15px;
+          color: #ff0000;
+        }
+      }
+
+    }
+
+    .content {
+      padding: 0 10px;
+      overflow: hidden;
+      .left {
+        width: 320px;
+        height: 430px;
+        float: left;
+        margin-right: 20px;
+        background: #e4ebf1;
+        padding: 20px;
+        box-sizing: border-box;
+        h3 {
+          font-size: 14px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+        p {
+          line-height: 35px;
+          color: #333;
+          padding-left: 10px;
+          i {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            font-size: 14px;
+          }
+          span {
+            display: inline-block;
+            width: 30px;
+            text-align: center;
+          }
+        }
+        p.color_666 {
+          color: #666;
+        }
+        p.on {
+          color: #1a8406;
+          i {
+            color: #1a8406;
+          }
+          span {
+            color: #1a8406;
+          }
+        }
+      }
+      .left_btn {
+        float: left;
+        position: relative;
+        width: 100px;
+        height: 430px;
+        > div {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+
+    .box_table {
+      padding: 0 10px;
+      p {
+        margin-bottom: 14px;
+        color: #666;
+        span {
+          color: #ff8400;
+        }
+      }
+    }
+  }
+
+  .msg_dialog {
+
+    ul {
+      li {
+        overflow: hidden;
+        border-bottom: 1px solid #e4ebf1;
+        padding-bottom: 20px;
+        .left {
+          float: left;
+          width: 60px;
+          text-align: center;
+          small {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+          }
+          small.trade_icon {
+            background: url("../img/incre_trade_icon.png") no-repeat center center;
+          }
+          small.count_icon {
+            background: url("../img/incre_count_icon.png") no-repeat center center;
+          }
+          small.finance_icon {
+            background: url("../img/incre_finance_icon.png") no-repeat center center;
+          }
+          span {
+            display: block;
+            color: #1a8406;
+          }
+        }
+        .right {
+          width: 370px;
+          float: right;
+          span {
+            display: inline-block;
+            width: 90px;
+            height: 32px;
+            margin: 0 12px 10px;
+            text-align: center;
+            line-height: 32px;
+            color: #00a2ff;
+            -webkit-border-radius: 32px;
+            -moz-border-radius: 32px;
+            border-radius: 32px;
+            border: 1px solid #00a2ff;
+            cursor: pointer;
+          }
+          span.on {
+            color: #fff;
+            background: #00a2ff;
+          }
+          span.disabled {
+            color: #fff;
+            background: #999;
+            border: 1px solid #999;
+            cursor: not-allowed;
+          }
+        }
+      }
+      li + li {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  .buyNow_box {
+    padding: 0 30px;
+    span {
+      display: block;
+      i {
+        font-style: normal;
+        display: inline-block;
+        padding-right: 160px;
+        width: 100px;
+      }
+    }
+    span + span {
+      margin-top: 30px;
+    }
+  }
+
+  .explain_box {
+    color: #333;
+    padding: 0 30px;
+    p {
+      line-height: 30px;
+    }
+  }
+
+}
+
+
+
+.table /deep/ .el-table th {
+  background: #00a2ff;
+  color: #fff;
+  padding: 8px 0;
+}
+
+.box_table /deep/ .el-table th {
+  background: #00a2ff;
+  color: #fff;
+  padding: 8px 0;
+}
+
+/deep/ .el-dialog__header {
+  background: #efefef;
+  color: #333;
+}

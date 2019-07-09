@@ -1,0 +1,318 @@
+/*商家信誉样式文件*/
+.shopRep_box {
+  //margin: 10px 0;
+  background: #fff;
+  .shopRep_top {
+    border-bottom: 2px solid #dcdcdc;
+    line-height: 50px;
+    padding: 0 10px;
+    overflow: hidden;
+    span {
+      font-size: 16px;
+      color: #333;
+      line-height: 16px;
+      padding-left: 12px;
+      border-left: 4px solid #4aa1f8;
+    }
+    a {
+      float: right;
+      color: #3c7bf9;
+      font-size: 14px;
+    }
+  }
+  .shopRep_record {
+    display: flex;
+    margin: 30px 0;
+    span {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      line-height: 16px;
+      font-size: 14px;
+      color: #333;
+      b {
+        color: #333;
+        font-size: 15px;
+      }
+
+    }
+    span + span {
+      border-left: 1px solid #999;
+    }
+  }
+
+  .shopRep_tips {
+    font-size: 14px;
+    color: #333;
+    padding-left: 35px;
+    background: url("../img/shopRep_tips_icon.png") no-repeat 10px center;
+    -webkit-background-size: 16px 15px;
+    background-size: 16px 15px;
+    margin-top: 40px;
+  }
+
+  .shopRep_chart {
+    margin-top: 20px;
+  }
+
+  .shopRep_score {
+    overflow: hidden;
+
+    .shopRep_score_left {
+      float: left;
+      span {
+        display: block;
+        width: 190px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        color: #333;
+        border-right: 2px solid #f1f1f3;
+        cursor: pointer;
+      }
+      span.on {
+        background: #f1f1f3 url("../img/shopRep_score_line.jpg") repeat-y left center;
+      }
+      span + span {
+        border-top: 2px solid #f1f1f3;
+      }
+
+    }
+
+    .shopRep_score_right {
+      float: left;
+      padding: 10px 20px;
+      > div {
+        margin: 20px 0 30px 0;
+        > span {
+          color: #333;
+          margin-left: 40px;
+        }
+        .score_line {
+          overflow: hidden;
+          min-width: 450px;
+          small, i, span {
+            float: left;
+          }
+          small {
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            margin-right: 8px;
+          }
+          small.icon_zan {
+            background: url("../img/icon_zan.png") no-repeat center center;
+          }
+          small.icon_good {
+            background: url("../img/icon_good.png") no-repeat center center;
+          }
+          small.icon_commonly {
+            background: url("../img/icon_commonly.png") no-repeat center center;
+          }
+          small.icon_bad {
+            background: url("../img/icon_bad.png") no-repeat center center;
+          }
+          i {
+            color: #333;
+            font-size: 14px;
+            line-height: 26px;
+            display: inline-block;
+            font-style: normal;
+          }
+
+          span {
+            width: 260px;
+            position: relative;
+            label {
+              width: 140px;
+              color: #333;
+              font-size: 14px;
+              line-height: 26px;
+              position: absolute;
+              display: inline-block;
+
+              z-index: 99;
+            }
+            span {
+              display: inline-block;
+              height: 26px;
+              background: #4aa1f8;
+              margin: 0 10px;
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+            }
+          }
+        }
+        div + div {
+          margin-top: 30px;
+        }
+      }
+    }
+
+  }
+
+  .shopRep_privilege {
+    padding: 45px 0 60px 0;
+    display: flex;
+    > div {
+      width: 100%;
+      text-align: center;
+      span {
+        display: inline-block;
+        width: 82px;
+        height: 82px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background: #f1f1f3;
+        small {
+          display: inline-block;
+          width: 82px;
+          height: 82px;
+        }
+        small.icon1 {
+          background: url("../img/shop_icon1.png") no-repeat center center;
+        }
+        small.icon2 {
+          background: url("../img/shop_icon2.png") no-repeat center center;
+        }
+        small.icon3 {
+          background: url("../img/shop_icon3.png") no-repeat center center;
+        }
+        small.icon4 {
+          background: url("../img/shop_icon4.png") no-repeat center center;
+        }
+      }
+      h1 {
+        font-size: 26px;
+        color: #333;
+        margin: 12px 0;
+      }
+      h4 {
+        font-size: 16px;
+        color: #333;
+        line-height: 16px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+
+  }
+
+  .shopRep_about {
+    padding: 20px 10px;
+    h3 {
+      color: #333;
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+      color: #666;
+      line-height: 40px;
+    }
+    > div {
+      padding-top: 20px;
+      overflow: hidden;
+      margin-top: 20px;
+      > span {
+        float: left;
+        display: inline-block;
+        width: 136px;
+        position: relative;
+        text-align: center;
+        padding-bottom: 10px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        small {
+          display: inline-block;
+          width: 44px;
+          height: 44px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          position: absolute;
+          top: -20px;
+          left: 50%;
+          margin-left: -22px;
+          z-index: 999;
+        }
+        p {
+          margin-top: 30px;
+          font-size: 12px;
+          line-height: 25px;
+        }
+        > span {
+          font-size: 12px;
+          color: #999;
+        }
+      }
+      span + span {
+        margin-left: 30px;
+      }
+      span.shopRep_about_span1 {
+        border: 1px solid #22ade6;
+        small {
+          background: #22ade6 url("../img/shopRep_about_span1.png") no-repeat center center;
+        }
+        p {
+          color: #22ade6;
+        }
+      }
+      span.shopRep_about_span2 {
+        border: 1px solid #7bcd8f;
+        small {
+          background: #7bcd8f url("../img/shopRep_about_span2.png") no-repeat center center;
+        }
+        p {
+          color: #7bcd8f;
+        }
+      }
+      span.shopRep_about_span3 {
+        border: 1px solid #fac068;
+        small {
+          background: #fac068 url("../img/shopRep_about_span3.png") no-repeat center center;
+        }
+        p {
+          color: #fac068;
+        }
+      }
+      span.shopRep_about_span4 {
+        border: 1px solid #b08de7;
+        small {
+          background: #b08de7 url("../img/shopRep_about_span4.png") no-repeat center center;
+        }
+        p {
+          color: #b08de7;
+        }
+      }
+      span.shopRep_about_span5 {
+        border: 1px solid #e5889a;
+        small {
+          background: #e5889a url("../img/shopRep_about_span5.png") no-repeat center center;
+        }
+        p {
+          color: #e5889a;
+        }
+      }
+    }
+
+  }
+
+}
+
+.marTop_20 {
+  margin-top: 20px;
+}
+
+.shopRep_score_right /deep/ .el-rate {
+  display: inline-block;
+}
+
+/deep/ .el-dialog__header {
+  background: #f0f0f0;
+}

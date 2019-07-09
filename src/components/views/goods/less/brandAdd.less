@@ -1,0 +1,175 @@
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+.container{
+  width: 100%;
+  //height:100%;
+  background: #ffffff;
+}
+
+h2{
+  padding: 20px 0px 0px 30px;
+  div{
+    display: inline-block;
+    width: 4px;
+    height: 16px;
+    background: #00a2ff;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  span{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+  }
+}
+
+
+.main{
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.demo-ruleForm{
+  /deep/ .el-input{
+    width: 391px;
+  }
+  /deep/ .el-form-item__label{
+    color: #333333;
+    font-size: 14px;
+  }
+
+  .brand-img {
+    /deep/ label{
+      float: none;
+    }
+    /deep/ .el-form-item__content{
+      line-height: 20px;
+    }
+    .brand-uploader{
+      display: inline-block;
+
+    }
+    ul{
+      display: inline-block;
+      vertical-align: bottom;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      li{
+        color: #999999;
+        font-size: 14px;
+      }
+      li:nth-last-of-type(1){
+        span:nth-of-type(1){
+          color: #ff9a09;
+        }
+        span:nth-of-type(2){
+          color: #00a2ff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+
+.logo-left{
+  display: inline-block;
+  margin-left: 10px;
+  /deep/ .upload_list{
+    div{
+      line-height: 100%;
+      li{
+        margin: 0px;
+      }
+    }
+  }
+  /deep/ .upload_box{
+    margin: 0px;
+  }
+}
+
+.logo-right{
+  display: inline-block;
+  vertical-align: bottom;
+  color: #999999;
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: 20px;
+  span{
+    color: #ff9a09;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+//饿了吗上传样式
+.avatar-uploader /deep/ .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 148px;
+  height: 148px;
+  line-height: 148px;
+  text-align: center;
+}
+.avatar {
+  width: 148px;
+  height: 148px;
+  display: block;
+}
+//
+
+.foot-btn{
+  margin-top: 30px;
+  text-align: center;
+  /deep/ .el-form-item__content{
+    margin-left: 0px !important;
+  }
+  /deep/ button{
+    padding: 0px;
+    width: 100px;
+    height: 36px;
+  }
+}
+
+.example{
+  ul{
+    font-size: 0px;
+    li{
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+      img{
+        width: 180px;
+        height: 246px;
+      }
+      p{
+        color: #666666;
+        font-size: 14px;
+        margin-top: 18px;
+      }
+    }
+  }
+}

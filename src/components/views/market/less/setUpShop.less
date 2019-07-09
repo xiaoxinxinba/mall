@@ -1,0 +1,146 @@
+@import "~@/assets/less/theme.less";
+
+// 商品折扣样式
+.discount_box {
+  background: #fff;
+  padding: 20px;
+  .btn {
+    ul {
+      margin: 0;
+      padding: 0;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      li {
+        cursor: pointer;
+        margin-right: 4px;
+        float: left;
+        text-align: center;
+        padding: 0 30px;
+        height: 36px;
+        line-height: 36px;
+        background-color: #dcdcdc;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 2px;
+        color: #333333;
+      }
+      li.active {
+        background-color: @color;
+        color: #ffffff;
+      }
+    }
+    .ribbon {
+      margin-top: 2px;
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(87deg,
+      #21d4fb 2%,
+      #21a1fb 31%,
+      #21cef5 46%,
+      #21fbee 62%,
+      #01a3ff 100%),
+      linear-gradient(
+        #00a2ff,
+        #00a2ff);
+      background-blend-mode: normal, normal;
+    }
+  }
+
+  .screen {
+    width: auto;
+    height: auto;
+    margin: 20px 0;
+    padding: 20px 0 0 20px;
+    background: #ecf4fa;
+    border-bottom: 1px #78ccfc solid;
+    .searchMean {
+      margin-left: 40px;
+    }
+    .lineStyle {
+      float: right;
+      span {
+        color: #50b2e9;
+        font-size: 16px;
+        i {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .table {
+    margin-top: 10px;
+    .pic {
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+  }
+
+  .page {
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  .discountList_span {
+    span {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #00a2ff;
+      margin: 5px 0;
+      color: #fff;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+  }
+
+  .rulesBox {
+    padding: 0 20px;
+    p {
+      line-height: 30px;
+      color: #333;
+    }
+  }
+
+  .tipsBox {
+    padding: 0 50px;
+    p {
+      color: #333;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+
+}
+
+.main_list /deep/ .el-button--primary {
+  background: #50b2e9;
+  border: 1px solid #50b2e9;
+}
+
+/deep/ .el-dialog__header {
+  background: #efefef;
+}
+
+/deep/ .el-table th {
+  background: #efefef;
+  color: #333;
+}
+
+/deep/ .el-input-group__prepend {
+  background: #00a2ff;
+  color: #fff;
+  border: 1px solid #00a2ff;
+}
+
+.tableNoPadd /deep/ .el-table .cell {
+  padding: 8px 0;
+}
+.table1 /deep/ .el-table th {
+  padding: 0;
+}

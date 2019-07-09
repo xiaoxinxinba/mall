@@ -1,0 +1,666 @@
+
+
+*{
+  box-sizing: border-box;
+}
+.container{
+  //min-height: calc(100% - 44px);
+  //display: inline-block;
+  //height: calc(100% - 44px);
+  //height: 100%;
+}
+
+.sale_after{
+  //min-height: calc(100vh - 185px);
+  position: relative;
+}
+
+.left{
+  width: 555px;
+  display: inline-block;
+  min-height: 100%;
+}
+
+.left_top{
+  max-width: 555px;
+  //min-height: 535px;
+  padding: 20px 15px 15px;
+  background: #ffffff;
+}
+.left_top_remind{
+  height: 36px;
+  line-height: 36px;
+  padding-left: 10px;
+  color: #ff6600;
+  background: #fff7e6;
+  border: 1px dashed #e1e1e1;
+  span:nth-of-type(1){
+    font-size: 16px;
+  }
+  span:nth-of-type(2){
+    font-size: 12px;
+  }
+}
+.title{
+  color: #333333;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 20px;
+  position: relative;
+  span{
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background: #00a2ff;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+}
+.box{
+  width: 525px;
+}
+
+//换货详情
+.details{
+  font-size: 0px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1;
+  >div{
+    display: inline-block;
+  }
+  .details_left{
+    width: 100px;
+    height: 100px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .details_right{
+    width: calc(100% - 100px);
+    padding: 10px 25px 0px 20px;
+    vertical-align: top;
+    font-size: 14px;
+    .details_goods{
+      color: #333333;
+      line-height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .details_color{
+      color: #666666;
+      margin-top: 20px;
+      .look_more{
+        display: inline-block;
+        width: 98px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        color: #ffffff;
+        background: #00a2ff;
+        float: right;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.details_none{
+  border-bottom: none;
+}
+
+//买家信息
+.info{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1;
+  .info_title{
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+  }
+  .info_list{
+    margin-top: 20px;
+    li{
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 10px;
+
+      .chat{
+        color: #00a2ff;
+        cursor: pointer;
+        i{
+          display: inline-block;
+          vertical-align: middle;
+          width: 16px;
+          height: 16px;
+          background: url("../img/chat.png") no-repeat center;
+          background-size: 16px 16px;
+          margin: 0px 10px 0px 50px;
+        }
+      }
+    }
+    li:nth-last-of-type(1){
+      margin-bottom: 0px;
+    }
+  }
+}
+
+//原因
+.reason{
+  margin-top: 20px;
+  li{
+    font-size: 14px;
+    line-height: 24px;
+    span:nth-of-type(2){
+      color: #333333;
+      display: inline-block;
+    }
+  }
+
+  .reason_img{
+    font-size: 0px;
+    //line-height: 0px;
+    li{
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      margin-right: 9px;
+      margin-top: 10px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    li:nth-last-of-type(1){
+      margin-right: 0px;
+    }
+  }
+  .reason_leave_word{
+    font-size: 0px;
+    div{
+      font-size: 14px;
+      display: inline-block;
+      width: calc(100% - 150px);
+      text-align: justify;
+      color: #666666;
+    }
+    span{
+      display: inline-block;
+      font-size: 14px;
+      width: 130px;
+      margin-left: 20px;
+      color: #999999;
+      vertical-align: top;
+    }
+  }
+}
+
+.reason_title{
+  display: inline-block;
+  //width: 84px;
+  text-align-last: justify;
+  //text-align: right;
+}
+.reason_right{
+  display: inline-block;
+  //width: calc(100% - 98px);
+  vertical-align: top;
+  color: #666666;
+}
+.info_list_title{
+  width: 56px;
+}
+.info_right{
+  width: calc(100% - 70px);
+}
+
+
+//处理历史
+.left_bottom{
+  margin-top: 20px;
+  max-width: 555px;
+  padding: 20px 25px 15px 15px;
+  background: #ffffff;
+  .title{
+    margin-top: 0px;
+  }
+  .dispose_title{
+    font-size: 14px;
+    line-height: 14px;
+    .icon_left{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #d9d9d9;
+      border-radius: 5px;
+      position: relative;
+      left: -4px;
+    }
+    .dispose_date{
+      color: #999999;
+      margin-left: 15px;
+      width: 130px;
+      text-align: justify;
+      display: inline-block;
+    }
+    >div{
+      display: inline-block;
+      margin-left: 20px;
+      color: #333333;
+    }
+  }
+  .dispose_content{
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-left: 1px solid #d9d9d9;
+    padding-left: 173px;
+    >li{
+      font-size: 14px;
+      line-height: 24px;
+      color: #666666;
+    }
+  }
+
+  .dispose_list{
+    margin-top: 16px;
+    >li{
+
+    }
+    li:nth-last-of-type(1){
+      .dispose_content{
+        border-left: none;
+      }
+    }
+    li:nth-of-type(1){
+      .icon_left{
+        background: #ff0000;
+      }
+      .dispose_title{
+        >div{
+          color: #ff0000;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+.right{
+  //display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  //bottom: 0px;
+  width: calc(100% - 580px);
+  height: 100%;
+  //height: 100%;
+  //vertical-align: top;
+  //margin-left: 20px;
+}
+
+
+//买家处理样式
+.seller{
+  //min-height: 100%;
+  min-height: calc(100vh - 185px);
+  height: 100%;
+  padding: 20px 240px 15px 15px;
+  background: #ffffff;
+  position: relative;
+  .title{
+    margin-top: 0px;
+  }
+}
+.seller_list{
+  margin-top: 30px;
+  li:nth-last-of-type(1){
+    .seller_content_left{
+      span{
+        border-left: none;
+      }
+    }
+  }
+}
+.seller_content{
+  font-size: 0px;
+  padding-left: 60px;
+  position: relative;
+  .seller_content_left{
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    i{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 14px;
+      color: #00a2ff;
+      font-weight: 600;
+      font-style: normal;
+      border-radius: 20px;
+      background: #e7f4fe;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    span{
+      height: 100%;
+      display: inline-block;
+      border-left: 1px dashed #00a2ff;
+    }
+  }
+  .seller_content_right{
+    padding-bottom: 20px;
+    .seller_main{
+      background: #eeeeee;
+      padding: 30px 0px 30px 30px;
+      border: 1px dashed #e1e1e1;
+
+      position: relative;
+      .left_arrows{
+        width: 15px;
+        height: 15px;
+        background: #eeeeee;
+        transform: rotate(-45deg);
+        border-top: 1px dashed #e1e1e1;
+        border-left: 1px dashed #e1e1e1;
+        position: absolute;
+        left: -8px;
+        top: 10px;
+      }
+    }
+  }
+}
+
+.seller_title{
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+}
+
+
+.btn{
+  margin-top: 20px;
+  /deep/ button{
+    padding: 0px;
+    width: 100px;
+    height: 32px;
+  }
+}
+
+//是否同意换货
+.exchange_goods{
+  .exchange_goods_radio{
+    margin-top: 20px;
+  }
+}
+
+//买家寄货地址
+.buyer_address{
+  font-size: 14px;
+  max-width: 500px;
+  .buyer_name{
+    color: #666666;
+    margin-top: 20px;
+    span{
+      color: #00a2ff;
+      text-decoration: underline;
+      cursor: pointer;
+      float: right;
+    }
+  }
+  .buyer_address_details{
+    margin-top: 5px;
+    color: #666666;
+  }
+  .buyer_sales_explain{
+    margin-top: 20px;
+    >span{
+      display: inline-block;
+      vertical-align: -7px;
+      color: #333333;
+    }
+    >div{
+      display: inline-block;
+      vertical-align: top;
+      max-width: 430px;
+      width: 86%;
+    }
+  }
+}
+
+//是否确认收到买家寄回商品
+.send_radio{
+  margin-top: 20px;
+}
+
+
+//收货有问题-问题描述
+.receive_goods{
+ .seller_title{
+   span:nth-of-type(1){
+     color: #ff0000;
+     margin-right: 5px;
+   }
+   .seller_title_remind{
+     display: inline-block;
+     color: #ff6600;
+     font-size: 12px;
+     background: #fff7e6;
+     height: 22px;
+     line-height: 22px;
+     padding: 0px 10px;
+     border-radius: 5px;
+     border: 1px solid #ffc89c;
+   }
+ }
+ .receive_goods_textarea{
+   margin-top: 20px;
+   max-width: 530px;
+ }
+  .receive_goods_img{
+    margin-top: 20px;
+    >div{
+      display: inline-block;
+    }
+    >span{
+      display: inline-block;
+      font-size: 14px;
+      vertical-align: bottom;
+      padding-bottom: 10px;
+    }
+    /deep/ .upload_box{
+      margin-left: 0px;
+      width: 90px;
+      height: 90px;
+      line-height: 110px;
+    }
+    /deep/ .upload_list{
+      li{
+        margin-left: 0px;
+        margin-right: 20px;
+        width: 90px;
+        height: 90px;
+
+      }
+    }
+
+  }
+
+
+}
+
+//收货有问题-平台介入处理
+
+
+
+
+//卖家寄货
+.goods_send_list{
+  //margin-top: 20px;
+  /deep/ .el-input{
+    width: 416px;
+  }
+  .goods_send_item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    >span{
+      display: inline-block;
+      font-size: 14px;
+      color: #333333;
+      width: 75px;
+      margin-right: 15px;
+    }
+  }
+  .goods_send_self{
+    margin-top: 20px;
+    .send_time{
+      width: 380px;
+      font-size: 0px;
+      >div{
+        display: inline-block;
+        width: 180px;
+        /deep/ .el-input{
+          width: 180px;
+        }
+      }
+      div:nth-of-type(2){
+        font-size: 14px;
+        color: #333333;
+        width: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .look_courier{
+    margin-top: -5px;
+    padding-left: 120px;
+    span{
+      font-size: 14px;
+      color: #00a2ff;
+      text-decoration: underline;
+    }
+  }
+}
+.goods_send{
+
+
+  .btn{
+    >span{
+     display: inline-block;
+      margin-left: 20px;
+      font-size: 14px;
+      color: #999999;
+      span{
+        color: #ff0000;
+      }
+    }
+  }
+
+}
+
+//已退款
+.refund_list{
+  .refund_list_content{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333333;
+    span{
+      color: #ff0000;
+    }
+  }
+}
+
+
+
+//卖家处理右边
+.seller_right{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  width: 210px;
+  border-left: 1px solid #eeeeee;
+  li{
+    margin-top: 25px;
+    color: #333333;
+    font-size: 14px;
+    position: relative;
+    left: -5px;
+    i{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background: #999999;
+      margin-right: 12px;
+    }
+  }
+  li:nth-of-type(1){
+    margin-top: 32px;
+  }
+  li:nth-last-of-type(1){
+    color: #00a2ff;
+    i{
+      background: #00a2ff;
+    }
+  }
+
+
+
+
+}
+
+
+
+
+
+
+//确定退款弹框
+.dialog_refund{
+  .refund{
+    text-align: center;
+    span{
+      color: #ff0000;
+    }
+  }
+  .dialog-footer{
+    >div{
+      text-align: center;
+    }
+    /deep/ button{
+      padding: 0px;
+      width: 86px;
+      height: 32px;
+    }
+  }
+}
+
+
+.input_num{
+  /deep/ input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+
+  }
+  /deep/ input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  /deep/ input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

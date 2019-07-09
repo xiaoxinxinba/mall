@@ -1,0 +1,211 @@
+
+.amend-main{
+  box-sizing: border-box;
+  padding: 30px 20px;
+  padding-bottom: 280px;
+  background: #ffffff;
+}
+
+.title-btn{
+  margin-bottom:30px;
+}
+.choose{
+  margin-bottom: 20px;
+}
+.license-num{
+
+  /deep/ .el-input{
+    width: 400px;
+  }
+}
+
+.input-title{
+  display: inline-block;
+  width: 95px;
+  text-align: right;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #333333;
+}
+//营业执照上传
+.license-upload,.promise-upload{
+  margin-top: 30px;
+  padding-left: 110px;
+}
+.license-uploader,.promise-uploader{
+  vertical-align: top;
+  display: inline-block;
+  .avatar-uploader /deep/ .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 150px;
+    height: 210px;
+    line-height: 210px;
+    text-align: center;
+  }
+  .avatar {
+    width: 150px;
+    height: 210px;
+    display: block;
+  }
+}
+
+
+
+.license-uploader{
+  /deep/ .upload_box{
+    margin: 0px;
+    width: 148px;
+    height: 208px;
+    line-height: 208px;
+  }
+  /deep/ .upload_list li{
+    margin: 0px;
+    width: 148px;
+    height: 208px;
+  }
+}
+
+
+
+.license-example{
+  margin-left: 20px;
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  width: 148px;
+  height: 208px;
+  position: relative;
+  div{
+    width: 30px;
+    height: 16px;
+    background: #666666;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.license-explain{
+  margin-left: 30px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 328px;
+  height: 208px;
+  border: 1px solid #e8e8e8;
+  font-size: 12px;
+  color: #999999;
+  background: #f8f8f8;
+  li{
+    line-height: 18px;
+    text-align: justify;
+  }
+}
+
+.establishDate,.overDate{
+  margin-top: 20px;
+  .el-input{
+    width: 400px;
+  }
+}
+.footer{
+  margin: 30px 0 0 20px;
+  button{
+    width: 100px;
+  }
+}
+
+//营业执照承若书
+.promise-date{
+  /deep/ .el-input{
+    width: 400px;
+  }
+}
+.promise-explain{
+  padding-top: 50px;
+  margin-left: 30px;
+  display: inline-block;
+  color: #999999;
+  font-size: 12px;
+  li{
+    line-height: 18px;
+    text-align: justify;
+  }
+  button{
+    margin-top: 30px;
+  }
+}
+
+.check{
+  //上传图片样式
+  .avatar-uploader /deep/ .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  //.avatar-uploader  /deep/ .el-upload:hover {
+  //  border-color: #409EFF;
+  //}
+  /deep/ .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 160px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+  }
+  ///deep/ .avatar {
+  //  width: 178px;
+  //  height: 178px;
+  //  display: block;
+  //}
+  //.el-upload{
+  //  border: 1px dashed #cccccc;
+  //}
+
+  .demo-form{
+    /deep/ .el-form-item__label{
+      width: 150px;
+    }
+    /deep/ .el-form-item{
+      margin-bottom: 30px;
+    }
+    /deep/ .el-form-item__error{
+      left: 150px;
+      margin-top: 5px;
+    }
+  }
+  .year-upload{
+    /deep/ .el-form-item__label{
+      line-height: 14px;
+    }
+    /deep/ .el-form-item__error{
+      top: 95%;
+    }
+  }
+  .form-btn{
+    margin-top: 50px;
+    text-align: center;
+  }
+}

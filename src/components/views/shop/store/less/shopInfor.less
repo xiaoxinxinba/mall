@@ -1,0 +1,343 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 0px 100px;
+}
+
+/*公司信息审核状态样式*/
+.state {
+  overflow: hidden;
+  line-height: 40px;
+  padding: 0 10px;
+  margin-top: 20px;
+  .left {
+    display: inline-block;
+    float: left;
+    span {
+      font-size: 12px;
+      color: #666;
+      display: inline-block;
+    }
+    span:first-child {
+      font-size: 16px;
+      margin-right: 20px;
+      padding-left: 32px;
+    }
+  }
+  .right {
+    display: inline-block;
+    float: right;
+  }
+}
+.no_pass {
+  border: 1px solid #ffc89c;
+  background: #fff7e6;
+  .left {
+    span:first-child {
+      color: #ff6600;
+      background: url('../img/comNoPass.png') no-repeat left center;
+      -webkit-background-size: 22px 20px;
+      background-size: 22px 20px;
+    }
+  }
+  .right {
+    span {
+      color: #999;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.auditing {
+  border: 1px solid #ffc89c;
+  background: #fff7e6;
+  .left {
+    span:first-child {
+      color: #ff6600;
+      background: url('../img/auditing.png') no-repeat left center;
+      -webkit-background-size: 20px 20px;
+      background-size: 20px 20px;
+    }
+  }
+  .right {
+    span {
+      color: #999;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.pass {
+  border: 1px solid #d8eccd;
+  background: #f1f8ee;
+  .left {
+    span:first-child {
+      color: #7abd54;
+      background: url('../img/pass.png') no-repeat left center;
+      -webkit-background-size: 20px 20px;
+      background-size: 20px 20px;
+    }
+  }
+  .right {
+    span {
+      color: #999;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.form_wrap {
+  margin-top: 20px;
+  .form_span {
+    span {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00a2ff;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      -webkit-border-radius: 3px 3px 0 0;
+      -moz-border-radius: 3px 3px 0 0;
+      border-radius: 3px 3px 0 0;
+    }
+    i {
+      font-size: 12px;
+      color: #999;
+      font-style: normal;
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  .form_box {
+    border-top: 1px solid #00a2ff;
+    padding: 20px 0 1px 0;
+    background: #fff;
+    overflow: hidden;
+    .cardImg_style {
+      display: inline-block;
+      float: left;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      > div {
+        width: 250px;
+        height: 160px;
+        img {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+      }
+      p {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+      }
+    }
+
+    .tip_style {
+      display: inline-block;
+      font-size: 12px;
+      color: #00a2ff;
+      margin-left: 20px;
+      float: left;
+      margin-top: 130px;
+    }
+    .marLeft_40 {
+      margin-left: 40px;
+    }
+    .tag_box {
+      width: 70%;
+      .tag_box_btn {
+        margin-bottom: 5px;
+        button {
+          padding: 8px 15px;
+          background: #00a2ff;
+          border: none;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+    .info_p {
+      color: #606266;
+      font-size: 14px;
+    }
+
+    .before_span {
+      overflow: hidden;
+      .shop_upload {
+        display: inline-block;
+        float: left;
+      }
+      .shop_tip {
+        display: inline-block;
+        float: left;
+        margin-left: 50px;
+        overflow: hidden;
+        min-width: 310px;
+        small {
+          float: left;
+          display: inline-block;
+          width: 8px;
+          height: 10px;
+          background: url("../img/shop_tipBg.jpg") no-repeat center center;
+          -webkit-background-size: 8px 10px;
+          background-size: 8px 10px;
+          position: relative;
+          top: 50px;
+          left: 2px;
+          z-index: 99;
+        }
+        > div {
+          display: inline-block;
+          font-size: 12px;
+          color: #666;
+          border: 1px solid #e9e9e9;
+          padding: 5px 20px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          background: #f8f8f8;
+          float: left;
+          h3 {
+            line-height: 28px;
+          }
+          p {
+            line-height: 25px;
+          }
+        }
+      }
+    }
+    .shop_rules {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url("../img/shop_rules_icon.png") no-repeat center center;
+      -webkit-background-size: 16px 16px;
+      background-size: 16px 16px;
+      position: relative;
+      top: 2px;
+      left: 5px;
+      cursor: pointer;
+    }
+    .shopImg_style {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      > div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #e8e8e8;
+        display: table-cell;
+        vertical-align: middle;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        img {
+          cursor: pointer;
+          position: relative;
+          left: 15%;
+        }
+      }
+    }
+    .shopImg_style1 {
+      > div {
+        width: 200px;
+        height: 200px;
+        img {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .shopImg_list {
+      > div {
+        overflow: hidden;
+        img {
+          float: left;
+          width: 160px;
+          height: 160px;
+        }
+        img + img {
+          margin-left: 15px;
+        }
+      }
+    }
+    .shop_explain {
+      color: #666;
+      span {
+        display: inline-block;
+        margin-left: 20px;
+        text-decoration: underline;
+        cursor: pointer;
+        color: #00a2ff;
+      }
+    }
+
+  }
+}
+.div_line {
+  line-height: 30px;
+}
+
+.marginTop_30 {
+  margin-top: 30px;
+}
+.dislog_box {
+  .dislog_row {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+}
+
+
+.dislog_box /deep/ .el-dialog__body {
+  padding: 10px 20px 0 20px;
+}
+.dislog_box /deep/ .el-checkbox {
+  width: 130px;
+  margin-bottom: 20px;
+}
+.dislog_box /deep/ .el-checkbox+.el-checkbox {
+  margin-left: 0;
+}
+.dislog_box /deep/ .el-checkbox__label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  width: 100px;
+}
+.dislog_box /deep/ .el-checkbox__input {
+  float: left;
+  position: relative;
+  top: 2px;
+}
+
+.before_span /deep/ .el-form-item__label:before {
+  content: "* ";
+  color: #f56c6c;
+  font-size: 14px;
+}
+.dialog_box /deep/ .el-dialog__header {
+  background: #efefef;
+}
+.label_lineHeight25 /deep/ .el-form-item__label {
+  line-height: 25px;
+}
+
+/deep/ .el-dialog__header {
+  background: #f0f0f0;
+}

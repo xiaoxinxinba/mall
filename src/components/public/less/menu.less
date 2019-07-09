@@ -1,0 +1,66 @@
+@import "~@/assets/less/theme.less";
+
+.menu_cont {
+  //padding: 0 4px 0;
+  overflow: auto;
+  height: 100%;
+  .item {
+    &:first-child {
+      margin-top: 25px;
+    }
+    .title {
+      height: 28px;
+      line-height: 28px;
+      background-color: #eeeeee;
+      padding-left: 22px;
+      position: relative;
+      border-left: 2px solid #eeeeee;
+      &.active {
+        background-color: #dbebf8;
+        border-left: 2px solid #01a3ff;
+        box-sizing: border-box;
+      }
+      i {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url("../img/menu_icon.png") no-repeat center;
+        background-size: 100% auto;
+        position: absolute;
+        top: 6px;
+        left: 22px;
+      }
+      span {
+        margin-left: 26px;
+        font-size: 14px;
+        color: #333333;
+        font-weight: bold;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 12px 22px 0 22px;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      li {
+        float: left;
+        width: 50%;
+        height: 20px;
+        line-height: 20px;
+        list-style: none;
+        margin-bottom: 12px;
+        a {
+          text-decoration: none;
+          color: #666666;
+          &:hover, &.active {
+            color: @color;
+          }
+        }
+      }
+    }
+  }
+}

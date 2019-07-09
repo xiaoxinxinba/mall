@@ -1,0 +1,141 @@
+// 系统消息样式
+.sysMessage_box {
+  background: #fff;
+  padding: 10px 20px;
+
+  .menu {
+    overflow: hidden;
+    background: url("../img/sys_menu_bg.png") repeat-x bottom;
+    span {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      display: inline-block;
+      padding: 10px 25px;
+      float: left;
+      cursor: pointer;
+      i {
+        font-style: normal;
+        color: #e60012;
+      }
+    }
+    span.on {
+      color: #00a2ff;
+      border-bottom: 2px solid #00a2ff;
+    }
+    span + span {
+      background: url("../img/sys_menu_icon.png") no-repeat left center;
+    }
+  }
+
+  .opera {
+    margin: 20px 0;
+    .margin_10 {
+      margin: 0 10px;
+    }
+    .opera_span {
+      font-size: 12px;
+      color: #999;
+    }
+  }
+
+  .list {
+    .box {
+      padding: 15px 20px;
+      overflow: hidden;
+      background: #f5f5f5;
+      margin-bottom: 10px;
+      .left {
+        width: 30px;
+        float: left;
+      }
+      .right {
+        width: 96%;
+        float: left;
+        h3 {
+          font-size: 14px;
+          color: #333;
+          line-height: 16px;
+          border-bottom: 1px solid #cfcfcf;
+          padding-bottom: 8px;
+          overflow: hidden;
+          span {
+            float: right;
+            color: #999;
+            font-size: 12px;
+            font-weight: normal;
+            small {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              background: url("../img/close_icon.png") no-repeat center center;
+              cursor: pointer;
+              margin-left: 20px;
+            }
+          }
+        }
+        p {
+          font-size: 12px;
+          color: #333;
+          line-height: 22px;
+          margin-top: 15px;
+        }
+        a {
+          font-size: 12px;
+          display: block;
+          margin: 5px 0;
+        }
+
+      }
+    }
+    .box:hover {
+      background: #e4ecf5;
+    }
+
+    .page{
+      padding: 20px;
+      text-align: right;
+    }
+  }
+
+}
+
+// 系统消息详情
+.sysMessageDetail_box {
+  min-height: 500px;
+  background: #fff;
+  .content {
+    margin: 20px;
+    padding: 10px 20px;
+    background: #f5f5f5;
+    h3 {
+      color: #333;
+      font-size: 14px;
+      border-bottom: 1px solid #cfcfcf;
+      overflow: hidden;
+      padding-bottom: 10px;
+      span {
+        float: right;
+        font-size: 12px;
+        color: #999;
+        font-weight: normal;
+        position: relative;
+        top: 4px;
+      }
+    }
+    p {
+      color: #333;
+      font-size: 12px;
+      line-height: 24px;
+      margin: 15px 0;
+    }
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+

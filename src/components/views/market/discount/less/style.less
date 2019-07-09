@@ -1,0 +1,540 @@
+@import "~@/assets/less/theme.less";
+
+// 发布优惠样式
+.main_container {
+  background: #fff;
+  padding: 20px;
+
+  .main_p {
+    p {
+      line-height: 40px;
+      color: #666;
+      padding-left: 40px;
+      background: #dcf0fb url("../img/main_tips.png") no-repeat 10px center;
+    }
+  }
+
+  .main_span {
+    text-align: right;
+    margin: 20px 0 10px 0;
+    span {
+      display: inline-block;
+      color: #50b2e9;
+      background: url("../img/main_span.png") no-repeat left center;
+      padding: 5px 0 5px 30px;
+      cursor: pointer;
+    }
+  }
+
+  .main_list {
+    .main_div {
+      padding: 5px 5px 0 0;
+      position: relative;
+      margin-bottom: 30px;
+      .main_div_box {
+        background: #f5f5f5;
+        padding: 20px;
+        .row {
+          height: 120px;
+          padding-left: 150px;
+          h3 {
+            color: #333;
+            font-size: 18px;
+            line-height: 30px;
+            padding-top: 10px;
+          }
+          p {
+            color: #999;
+            margin-top: 5px;
+          }
+        }
+        div.icon_zhe {
+          background: url("../img/icon_zhe.png") no-repeat left top;
+        }
+        div.icon_zeng {
+          background: url("../img/icon_zeng.png") no-repeat left top;
+        }
+        div.icon_quan {
+          background: url("../img/icon_quan.png") no-repeat left top;
+        }
+        div.icon_you {
+          background: url("../img/icon_you.png") no-repeat left top;
+        }
+        div.icon_fan {
+          background: url("../img/icon_fan.png") no-repeat left top;
+        }
+        div.icon_cu {
+          background: url("../img/icon_cu.png") no-repeat left top;
+        }
+        .btn {
+          text-align: right;
+          margin-top: 10px;
+        }
+      }
+      .doing_icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 104px;
+        height: 109px;
+        background: url("../img/main_doing.png") no-repeat center center;
+      }
+    }
+  }
+}
+
+.dialog_box {
+  h3 {
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: 15px;
+    color: #666;
+    line-height: 30px;
+
+  }
+  p {
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+  }
+}
+
+
+// 商品折扣样式
+.discount_box {
+  background: #fff;
+  padding: 20px;
+
+  .btn {
+    ul {
+      margin: 0;
+      padding: 0;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      li {
+        cursor: pointer;
+        margin-right: 4px;
+        float: left;
+        text-align: center;
+        padding: 0 30px;
+        height: 36px;
+        line-height: 36px;
+        background-color: #dcdcdc;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 2px;
+        color: #333333;
+      }
+      li.active {
+        background-color: @color;
+        color: #ffffff;
+      }
+    }
+    .ribbon {
+      margin-top: 2px;
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(87deg,
+      #21d4fb 2%,
+      #21a1fb 31%,
+      #21cef5 46%,
+      #21fbee 62%,
+      #01a3ff 100%),
+      linear-gradient(
+        #00a2ff,
+        #00a2ff);
+      background-blend-mode: normal, normal;
+    }
+  }
+
+  .screen {
+    width: auto;
+    height: auto;
+    margin: 20px 0;
+    padding: 20px 0 0 20px;
+    background: #ecf4fa;
+    border-bottom: 1px #78ccfc solid;
+    .searchMean {
+      margin-left: 40px;
+    }
+  }
+
+  .table {
+    margin-top: 10px;
+    .pic {
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+  }
+
+  .page {
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  .discountList_span {
+    span {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #00a2ff;
+      margin: 5px 0;
+      color: #fff;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+  }
+
+}
+
+// 添加商品折扣样式
+.addDiscount_box {
+  background: #fff;
+  padding: 20px;
+
+  .title_box {
+    margin-bottom: 30px;
+    ul {
+      margin: 0;
+      padding: 0;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      li {
+        cursor: pointer;
+        margin-right: 4px;
+        float: left;
+        text-align: center;
+        padding: 0 30px;
+        height: 36px;
+        line-height: 36px;
+        background-color: #dcdcdc;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 2px;
+        color: #333333;
+      }
+      li.active {
+        background-color: @color;
+        color: #ffffff;
+      }
+    }
+    .ribbon {
+      margin-top: 2px;
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(87deg,
+      #21d4fb 2%,
+      #21a1fb 31%,
+      #21cef5 46%,
+      #21fbee 62%,
+      #01a3ff 100%),
+      linear-gradient(
+        #00a2ff,
+        #00a2ff);
+      background-blend-mode: normal, normal;
+    }
+  }
+
+  .add_tips_p {
+    color: #ff6600;
+    margin: 20px 0 0 40px;
+    line-height: 30px;
+    padding-left: 30px;
+    background: url("../img/add_tips_p.png") no-repeat left center;
+  }
+
+  .add_line {
+    span {
+      display: inline-block;
+    }
+    span.add_span {
+      color: #333;
+      display: inline-block;
+      margin: 0 5px;
+    }
+    i {
+      color: #999;
+      font-style: normal;
+    }
+  }
+
+  .add_prepend {
+    span {
+      color: #00a2ff;
+      display: inline-block;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    i {
+      color: #999;
+      font-style: normal;
+    }
+  }
+
+  .add_tag {
+    margin-top: 10px;
+    span {
+      margin-right: 15px;
+    }
+  }
+
+  .add_font {
+    color: #999;
+  }
+
+  .table {
+    margin-top: 10px;
+    max-height: 400px;
+    overflow: auto;
+    .pic {
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+    .table_ul {
+      li {
+        height: 40px;
+        line-height: 40px;
+      }
+      li + li {
+        margin-top: 8px;
+        border-top: 1px solid #DCDFE6;
+        padding-top: 8px;
+      }
+    }
+  }
+
+  .page {
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  .add_top {
+    margin-top: 10px;
+  }
+
+  .dialog_span {
+    margin-bottom: 20px;
+    overflow: hidden;
+    span {
+      display: inline-block;
+      float: left;
+    }
+    span + span {
+      margin-left: 20px;
+    }
+    span:last-child {
+      float: right;
+    }
+  }
+
+  .shop_main_pic {
+    > ul {
+      overflow: hidden;
+      display: inline-block;
+      padding-top: 10px;
+      li {
+        float: left;
+        width: 130px;
+        height: 140px;
+        margin-right: 12px;
+        position: relative;
+        //border: 1px solid #e8e8e8;
+        //background: #eaeaea ;
+        > span {
+          background: #eee;
+          display: inline-block;
+          width: 100%;
+          height: 26px;
+          line-height: 26px;
+          text-align: center;
+          color: #fff;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 100;
+        }
+        > img {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+        > input {
+          width: 138px;
+          height: 138px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+          opacity: 0;
+          cursor: pointer;
+        }
+      }
+      .list-group{
+        &:after{
+          clear: both;
+          content: '';
+          display: block;
+        }
+      }
+    }
+
+    .main_pic_tips {
+      display: inline-block;
+      margin-right: 50px;
+      margin-top: 20px;
+      h3 {
+        color: #00a2ff;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 14px;
+        color: #333;
+        line-height: 30px;
+      }
+      a {
+        color: #dd0303;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .look_p {
+    color: #333;
+  }
+
+  .look_span {
+    padding: 5px 10px;
+    background: #00a2ff;
+    color: #fff;
+    line-height: 20px;
+    display: inline-block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+
+  .textLeft {
+    padding-left: 110px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .gift_box {
+    ul {
+      li {
+        overflow: hidden;
+        .left {
+          display: inline-block;
+          float: left;
+          width: 86px;
+          height: 56px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .right {
+          max-width: 82%;
+          display: inline-block;
+          float: right;
+          p {
+            text-align: left;
+            display: inline-block;
+            font-size: 12px;
+            color: #666;
+            line-height: 20px;
+          }
+          > div {
+            text-align: right;
+            span {
+              text-decoration: underline;
+              color: #00a2ff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      li + li {
+        border-top: 1px solid #dfdfdf;
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .choiceArea {
+    height: 200px;
+    width: 600px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding: 10px;
+    > span {
+      float: left;
+      display: inline-block;
+      margin: 0 10px;
+      line-height: 28px;
+      color: #333;
+    }
+  }
+
+  .areaDialog_box {
+    .top {
+      background: #ecf4fa;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .center {
+      label {
+        display: inline-block;
+        width: 20%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+
+.main_list /deep/ .el-button--primary {
+  background: #50b2e9;
+  border: 1px solid #50b2e9;
+}
+
+/deep/ .el-dialog__header {
+  background: #efefef;
+}
+
+/deep/ .el-table th {
+  background: #efefef;
+  color: #333;
+}
+
+/deep/ .el-input-group__prepend {
+  background: #00a2ff;
+  color: #fff;
+  border: 1px solid #00a2ff;
+}
+
+.tableNoPadd /deep/ .el-table .cell {
+  padding: 8px 0;
+}
+.table1 /deep/ .el-table th {
+  padding: 0;
+}

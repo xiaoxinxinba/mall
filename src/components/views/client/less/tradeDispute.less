@@ -1,0 +1,112 @@
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+.title-btn{
+  width: 121px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  color: #ffffff;
+  background: #00a2ff;
+}
+
+.line{
+  margin-top: 15px;
+  height: 2px;
+  background-image: linear-gradient(87deg, #21d4fb 2%, #21a1fb 31%, #21cef5 46%, #21fbee 62%, #01a3ff 100%),
+  linear-gradient(#00a2ff, #00a2ff);
+  background-blend-mode: normal, normal;
+}
+
+.main{
+  padding: 20px;
+  background: #ffffff;
+}
+
+.change-btn{
+  li{
+    display: inline-block;
+    padding: 10px 0px;
+    font-weight: 600;
+    span{
+      display: inline-block;
+      padding: 0px 25px;
+      color: #333333;
+      border-right: 1px solid #999999;
+      cursor: pointer;
+    }
+
+    i{
+      color: #e60012;
+      font-style:normal;
+    }
+  }
+  li:nth-last-of-type(1){
+    span{
+      border-right: none;
+    }
+  }
+  .choose{
+    border-bottom:2px solid #00a2ff ;
+    span{
+      color: #00a2ff;
+    }
+  }
+}
+
+.filtrate{
+  margin-top: 20px;
+  padding: 20px;
+  background: #ecf4fa;
+  border-bottom: 1px solid #00a2ff;
+  .filtrate-search{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-size: 14px;
+    span{
+      display: inline-block;
+      width: 100px;
+      text-align-last: justify;
+      color: #333333;
+    }
+    /deep/ button{
+      padding: 0px;
+      width: 100px;
+      height: 36px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.table-list{
+  margin-top: 20px;
+  /deep/ .has-gutter{
+    tr{
+      background: #e1e1e1;
+    }
+    .cell{
+      color: #333333;
+      font-weight: 600;
+    }
+  }
+  /deep/ .cell{
+    text-align: center;
+  }
+
+  .operation{
+    color: #00a2ff;
+    cursor: pointer;
+  }
+}
+
+.page{
+  margin-top: 30px;
+  text-align: right;
+}
+
+

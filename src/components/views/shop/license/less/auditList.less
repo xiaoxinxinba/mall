@@ -1,0 +1,212 @@
+
+
+.box{
+  margin-top: 10px;
+}
+
+.title{
+  //height: 36px;
+  margin: 0;
+  padding: 0;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  li {
+    cursor: pointer;
+    margin-right: 4px;
+    float: left;
+    text-align: center;
+    padding: 0 15px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #dcdcdc;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #333333;
+  }
+  li:nth-of-type(1) {
+    background-color: #00a2ff;
+    color: #ffffff;
+  }
+}
+
+
+.ribbon {
+  margin-top: 2px;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(87deg,
+  #21d4fb 2%,
+  #21a1fb 31%,
+  #21cef5 46%,
+  #21fbee 62%,
+  #01a3ff 100%),
+  linear-gradient(
+    #00a2ff,
+    #00a2ff);
+  background-blend-mode: normal, normal;
+}
+
+
+
+.audit{
+  margin-top: 24px;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  background: #ffffff;
+}
+
+.audit {
+  /deep/ .has-gutter{
+    th{
+      background: #f1f2f3;
+      border-right: none;
+    }
+  }
+  /deep/ .cell{
+    text-align: center;
+  }
+  .license-img{
+    width: 118px;
+    height: 50px;
+  }
+
+  /deep/ .has-gutter{
+    color: #333333;
+    font-size: 14px;
+    background: #f1f1f3;
+  }
+  /deep/ .el-table{
+    color: #333333;
+    font-size: 14px;
+  }
+  button{
+    color: #00a2ff;
+  }
+  .page{
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+}
+
+.foot-btn{
+  width: 100px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.pass{
+  color: #00a2ff;
+}
+.nopass{
+  color: #ff0000;
+}
+
+
+.check{
+  //上传图片样式
+  .avatar-uploader /deep/ .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  //.avatar-uploader  /deep/ .el-upload:hover {
+  //  border-color: #409EFF;
+  //}
+  /deep/ .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 160px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+  }
+  ///deep/ .avatar {
+  //  width: 178px;
+  //  height: 178px;
+  //  display: block;
+  //}
+  //.el-upload{
+  //  border: 1px dashed #cccccc;
+  //}
+
+  .isAnnualVerify-demo{
+    /deep/ .el-dialog__header{
+      padding: 0px;
+      height: 40px;
+      line-height: 40px;
+      background: #f0f0f0;
+      .el-dialog__title{
+        color: #333333;
+        font-size: 14px;
+        font-weight: 600;
+        padding-left: 10px;
+      }
+      .el-dialog__headerbtn{
+        top: 12px;
+        right: 10px;
+        i{
+          color: #ff0000;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .demo-form{
+    /deep/ .el-form-item__label{
+      font-weight: 600;
+      color: #333333;
+    }
+    /deep/ .el-form-item{
+      margin-bottom: 30px;
+    }
+    /deep/ .el-form-item__error{
+      margin-top: 5px;
+    }
+  }
+  .year-upload{
+    /deep/ .el-form-item__label{
+      line-height: 14px;
+    }
+    /deep/ .el-form-item__error{
+      top: 89%;
+      left: 170px;
+    }
+    /deep/ .el-form-item__content{
+      line-height: normal;
+    }
+
+    /deep/ .upload_box{
+      margin: 0px;
+      width: 160px;
+      height: 208px;
+      line-height: 208px;
+    }
+    /deep/ .upload_list li{
+      margin: 0px;
+      width: 160px;
+      height: 208px;
+    }
+  }
+  .form-btn{
+    margin-top: -10px;
+    padding-left: 60px;
+    >div{
+      text-align: center;
+    }
+    /deep/ button{
+      padding: 0px;
+      width: 86px;
+      height: 32px;
+    }
+  }
+}
+
+

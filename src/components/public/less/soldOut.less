@@ -1,0 +1,98 @@
+
+
+*{
+  box-sizing: border-box;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.goods{
+  font-size: 0px;
+  img{
+    width: 88px;
+    height: 63px;
+    vertical-align: middle;
+  }
+  .goods-infor{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  p{
+    color: #333333;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    margin-bottom: 5px;
+  }
+  p:nth-of-type(2){
+    color: #666666;
+    span{
+      color: #333333;
+    }
+  }
+  P:nth-last-of-type(1){
+    color: #999999;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+}
+
+.cause{
+  margin-top: 20px;
+  >span{
+    margin-right: 20px;
+  }
+}
+
+.reason{
+  margin-top: 20px;
+  span{
+    display: inline-block;
+    padding-top: 5px;
+    color: #333333;
+    margin-right: 5px;
+  }
+  .reason-textarea{
+    width: 325px;
+    vertical-align: top;
+  }
+}
+
+.password{
+  margin-top: 20px;
+  span{
+    color: #333333;
+    margin-right: 5px;
+  }
+  .password-inp{
+    width: 325px;
+    vertical-align: middle;
+  }
+  /deep/ i{
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+
+.remark{
+  margin-top: 20px;
+  color: #999999;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: justify;
+  span{
+    color: #e60012;
+    font-size: 12px;
+  }
+}
+
+.dialog-footer{
+  /deep/ button{
+    padding: 0px;
+    width: 86px;
+    height: 32px;
+  }
+}

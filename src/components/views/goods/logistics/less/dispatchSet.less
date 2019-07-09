@@ -1,0 +1,205 @@
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 20px;
+  background: #ffffff;
+}
+
+.charge-name{
+  /deep/ .el-input{
+    width: 434px;
+  }
+}
+.charge-name,.valuation{
+  margin-bottom: 20px;
+  .title{
+    margin-right: 30px;
+  }
+}
+
+.stage{
+  margin-top: 30px;
+  .title{
+    display: inline-block;
+  }
+  .stage-ul{
+    padding-left: 25px;
+    display: inline-block;
+    font-size: 0px;
+    li{
+      display: inline-block;
+      vertical-align: middle;
+      width: 44px;
+      height: 44px;
+      position: relative;
+    }
+    span{
+      display: inline-block;
+      vertical-align: middle;
+      width: 75px;
+      height: 11px;
+      background: url("../img/line.png") no-repeat center;
+      position: relative;
+      z-index: 10;
+    }
+    li:nth-of-type(1){
+      background: url("../img/frist.png") no-repeat center;
+    }
+    .ok{
+      background: url("../img/ok.png") no-repeat center;
+    }
+    .now{
+      background: url("../img/now.png") no-repeat center;
+    }
+    .wait{
+      background: url("../img/wait.png") no-repeat center;
+    }
+    .last{
+      background: url("../img/last.png") no-repeat center;
+    }
+    .last-ok{
+      background: url("../img/last-ok.png") no-repeat center;
+    }
+  }
+}
+.stage-content{
+  font-size: 0px;
+  padding-left: 170px;
+  margin-top: 10px;
+  li{
+    font-size: 12px;
+    display: inline-block;
+    //margin-right: 20px;
+    color: #666666;
+  }
+  .cur-stage{
+    color: #00a2ff;
+  }
+}
+
+.title{
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+  i{
+    color: #dc0000;
+    margin-right: 5px;
+  }
+}
+
+.category{
+  /deep/ .el-select{
+    width: 139px;
+    margin-right: 5px;
+  }
+  /deep/ .el-input__inner{
+    height: 32px;
+    line-height: 32px;
+  }
+  /deep/ .el-input__icon{
+    line-height: 32px;
+  }
+  .title{
+    margin-right: 25px;
+  }
+}
+
+
+.main{
+  padding-left: 170px;
+}
+
+
+.remind{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 12px;
+  color: #c5651f;
+  padding: 0px 10px;
+  height: 32px;
+  line-height: 32px;
+  background: #fff7e6;
+  border:1px solid #ffc79c;
+  margin-left: 170px;
+}
+
+.add-btn{
+  margin-top: 20px;
+  /deep/ button{
+    padding: 0px;
+    width: 110px;
+    height: 32px;
+  }
+}
+
+.remind-right{
+  font-size: 14px;
+  color: #00a2ff;
+  text-align: right;
+  text-decoration: underline;
+}
+
+
+.table{
+  margin-top: 20px;
+  /deep/ .cell{
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+.area-add{
+  span{
+    display: inline-block;
+    width: calc(100% - 26px);
+    vertical-align: middle;
+  }
+  .area-add-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/add.png") no-repeat center;
+    background-size: 16px 16px;
+    margin:0px 5px;
+    cursor: pointer;
+  }
+}
+
+.table-input{
+  text-align: center;
+  input{
+    width: 100px;
+    height: 36px;
+    padding-left: 10px;
+    text-align: center;
+  }
+}
+.delete{
+  color: #00a2ff;
+  cursor: pointer;
+}
+
+.add-set{
+  font-size: 14px;
+  color: #00a2ff;
+  margin-top: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.footer-btn{
+  margin-top: 20px;
+  /deep/ button{
+    padding: 0px;
+    width: 86px;
+    height: 32px;
+  }
+}
+
